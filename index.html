@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>Add items and their amounts to plan your grocery trip!</h1>
+    <div class="item-form-container">
+        <form id="item-form">
+              <div>
+                  <label for="item-name">Item</label>
+                  <input type="text" id="item-name" placeholder="Enter Item Name" autocomplete="off" autofocus size="20" required>
+              </div>
+            <div>
+                <label for="item-amount">Amount</label>
+                <input type="number" id="item-amount" placeholder="Enter Item Amount" autocomplete="off" size="17" required>
+            </div>
+            <div>
+                <button type="submit">Add Item</button>
+            </div>
+        </form>
+    </div>
+    <div class="shopping-list-container" style="margin-top: 1em">
+        <ul id="shopping-list">
+        </ul>
+    </div>
+</body>
+</html>
